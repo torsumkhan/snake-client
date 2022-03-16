@@ -12,8 +12,8 @@ const connect = function () {
 
   conn.on('connect', () => {
       console.log('im connected')
-      conn.write('Name: TK9')
-      setInterval(() => {conn.write('Move: up')}, )
+      conn.write('Name: CR7')
+    //   setInterval(() => {conn.write('Move: up')}, )
     //   setTimeout(() => {conn.write('Move: up')}, 500);
     //   setTimeout(() => {conn.write('Move: up')}, 1000);
     //   setTimeout(() => {conn.write('Move: up')}, 1500);
