@@ -12,6 +12,7 @@ const connect = function () {
 
   conn.on('connect', () => {
       console.log('im connected')
+      conn.write('Name: TK9')
   })
 
   conn.on('data', (data) => {
@@ -20,6 +21,8 @@ const connect = function () {
 
   return conn;
 };
+
+connect();
 
 
 module.exports = {connect};
