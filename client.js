@@ -13,6 +13,11 @@ const connect = function () {
   conn.on('connect', () => {
       console.log('im connected')
       conn.write('Name: TK9')
+      setInterval(() => {conn.write('Move: up')}, 1000)
+    //   setTimeout(() => {conn.write('Move: up')}, 500);
+    //   setTimeout(() => {conn.write('Move: up')}, 1000);
+    //   setTimeout(() => {conn.write('Move: up')}, 1500);
+    //   setTimeout(() => {conn.write('Move: up')}, 2000);
   })
 
   conn.on('data', (data) => {
